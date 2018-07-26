@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Form</h2>
+
+<form action="/action_page.php">
+  name:
+  <input name="name" type="text">
+  <br><br>
+  mobile number:
+  <input type="text" name="mobile nummber">
+  <br><br>
+  email id:
+<input type="text" name="email id">
+<br><br>
+pasword:
+<input type="text" name="pasword">
+<br><br>
+<p>gender:</p>
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+</form><br>
+<p>courses joined:
+<form>
+	<input type="radio" name="courses joined" value="java" checked>java<br>
+	<input type="radio" name="courses joined" value="php" checked>php<br>
+	<br>
+	<p>upload documents</p>
+	Select a file: <input type="file" name="myFile"><br><br>
+start date:
+<input type="date" name="bday" max="2016-12-31"><br><br>
+end date:
+<input type="date" name="bday" min="2020-01-02"><br><br>
+	<p>min class hours:
+		<input list="class hours" name="class hours">
+		<datalist id="class hours">
+		<option value="1 hour">
+		<option value="2 hour">
+		<option value="3hours">
+		<br> 
+	<p>city:
+	<input list="cities" name="cities">
+  <datalist id="cities">
+    <option value="hyderabad">
+    <option value="bangalore">
+    <option value="chennai">
+    <option value="mumbai">
+    <option value="pune">
+  </datalist>
+  <br>
+<p>comments:</p>
+	<textarea name="message" rows="10" cols="30"></textarea>
+  <br><br>
+
+</form>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
